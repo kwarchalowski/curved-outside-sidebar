@@ -1,6 +1,6 @@
 # curved-outside-sidebar
 
-<h1 align="center">![](.img/ex.png)</h1>
+![](.img/ex.png)
 
 HTML/CSS+Sass/JS sidebar menu with curved outside boders on active tab.
 

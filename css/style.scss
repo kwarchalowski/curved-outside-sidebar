@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #1d1d22;
+}
+
+.sidebar {
+  position: fixed;
+  width: 70px;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  box-sizing: initial;
+  border-left: 8px solid #676b79;
+  background: rgb(65, 61, 70);
+  transition: width 1s;
+  overflow-x: hidden;
+  border-radius: 15px;
+
+  &:hover {
+      width: 250px;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-left: 5px;
+    padding-top: 40px;
+
+    li {
+      position: relative;
+      list-style-type: none;
+      width: 100%;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+
+      &.active {
+        background: #1d1d22;
+
+        a {
+          color: rgb(219, 212, 231);
+        }
+
+        // curves on the outside 'magic' ^_^
+        a::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            box-shadow: 15px 15px 0 #1d1d22;
+            border-radius: 50%;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            box-shadow: 15px -15px 0 #1d1d22;
+            border-radius: 50%;
+        }
+
+      }
+
+      a {
+        position: relative;
+        width: 100%;
+        display: flex;
+        text-decoration: solid;
+        text-transform: uppercase;
+        color: rgb(167, 165, 172);
+
+        .icon {
+          position: relative;
+          display: block;
+          height: 70px;
+          min-width: 80px;
+          line-height: 80px;
+          text-align: center;
+
+          ion-icon {
+            font-size: 1.5em;
+          }
+        }
+
+        .menu_text {
+          position: relative;
+          display: block;
+          height: 60px;
+          line-height: 70px;
+          white-space: normal;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

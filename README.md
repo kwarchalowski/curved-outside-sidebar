@@ -1,6 +1,6 @@
 # curved-outside-sidebar
 
-![](.img/ex.png)
+[![](.img/ex.png)](https://warchalowski.pl/pro/curved-outside-sidebar/)
 
 HTML/CSS+Sass/JS sidebar menu with curved outside boders on active tab.
 
